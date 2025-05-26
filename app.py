@@ -9,9 +9,9 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.impute import SimpleImputer
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense
-from tensorflow.keras.callbacks import EarlyStopping
+#from tensorflow.keras.models import Sequential
+#from tensorflow.keras.layers import LSTM, Dense
+#from tensorflow.keras.callbacks import EarlyStopping
 import yfinance as yf
 
 st.set_page_config(layout="wide")
@@ -152,7 +152,7 @@ plt.legend()
 plt.grid(True)
 st.pyplot(fig)
 
-
+'''
 st.subheader("4. 🔮 LSTM Future 30-Day Forecast")
 
 if st.button("🔮 Predict"):
@@ -215,3 +215,5 @@ if st.button("🔮 Predict"):
     st.dataframe(predictions_df, use_container_width=True)
 else:
     st.info("Click the **Predict** button to generate the 30-day LSTM forecast.")
+
+'''
